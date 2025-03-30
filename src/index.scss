@@ -1,0 +1,60 @@
+.sidebar {
+  .hard-br {
+    background-color: #ce0000;
+    width: 3px;
+    height: 1.3rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 2px;
+    border-radius: 2px;
+  }
+}
+
+.field-navigation {
+  padding: 1px 0 10px 1px;
+
+  .row {
+    display: flex;
+    padding: 0;
+    align-items: center;
+
+    &.nested {
+      input:first-child {
+        width: 230px;
+        margin-left: 20px;
+      }
+    }
+
+    &.title {
+      input {
+        background-color: #eee;
+        font-weight: bold;
+      }
+    }
+
+    > button.move {
+      display: none;
+      margin-left: 5px;
+    }
+
+    &:focus-within > button.move {
+      display: block;
+    }
+
+    input {
+      width: 250px;
+      margin: -1px -1px 0 0;
+      padding: 7px 10px;
+      border: 1px solid #aaa;
+      border-radius: 0;
+      background-color: white;
+      color: black;
+      font-family: inherit;
+      font-size: inherit;
+
+      &:focus {
+        z-index: 1;
+      }
+    }
+  }
+}
