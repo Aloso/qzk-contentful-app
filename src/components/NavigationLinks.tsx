@@ -34,7 +34,7 @@ const NavigationLinks = ({ sdk }: Props) => {
       copy.splice(index, 1);
     }
     setField(copy);
-    sdk.field.setValue(field);
+    sdk.field.setValue(copy);
     setTimeout(() => sdk.window.updateHeight());
   }
 

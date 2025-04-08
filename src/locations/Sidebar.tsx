@@ -71,7 +71,7 @@ const Sidebar = () => {
       )}
       <Note style={{ marginBottom: "12px" }}>
         <p>Inhalt: {words.length} Wörter</p>
-        {longest.sentence.length > 200 && (
+        {longest.sentence.length > 250 && (
           <p style={{ margin: "12px 0 0 -40px" }}>
             Ein Satz ist ganze <b>{longest.sentence.length}</b> Zeichen lang:
             <br />

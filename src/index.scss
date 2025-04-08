@@ -58,3 +58,106 @@
     }
   }
 }
+
+.field-opening-hours {
+  padding: 0 0 10px 0;
+
+  table {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
+
+    td,
+    th {
+      padding: 3px 8px;
+    }
+  }
+
+  .time-range {
+    display: inline-flex;
+    gap: 0.3rem;
+    padding-left: 0.3rem;
+    margin-right: 1rem;
+    border: 1px solid #cfd9e0;
+    border-radius: 6px;
+    align-items: center;
+    vertical-align: middle;
+    overflow: hidden;
+
+    &.invalid {
+      border-color: #e86d08;
+    }
+
+    &:focus-within {
+      box-shadow: #98cbff 0px 0px 0px 3px;
+      border-color: #036fe3;
+    }
+
+    input[type="time"] {
+      border: none;
+      margin: 0;
+      padding: 0;
+      font: inherit;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .add-button,
+  .delete-button,
+  .time-delete-button {
+    background-color: #f7f9fa;
+    color: #111b2b;
+    font: inherit;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    margin-right: 8px;
+    border: 1px solid #cfd9e0;
+    border-radius: 6px;
+    transition: color 0.2s;
+    vertical-align: middle;
+
+    &:hover,
+    &:focus {
+      color: #0f9100;
+      cursor: pointer;
+    }
+  }
+
+  .time-delete-button {
+    background-color: transparent;
+    border-width: 0 0 0 1px;
+    border-radius: 0 4px 4px 0;
+    margin: 0;
+  }
+
+  .delete-button,
+  .time-delete-button {
+    &:hover,
+    &:focus {
+      color: #b50000;
+    }
+  }
+
+  .delete-button {
+    font-size: 0.875rem;
+  }
+
+  input[type="date"] {
+    border: 1px solid #cfd9e0;
+    border-radius: 6px;
+    padding: 5px;
+    background: #f7f9fa;
+
+    &:focus {
+      outline: none;
+      box-shadow: #98cbff 0px 0px 0px 3px;
+      border-color: #036fe3;
+    }
+  }
+}
